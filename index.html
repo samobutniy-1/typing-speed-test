@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeTest — Typing Speed</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">type<span>.</span>test</div>
+        <div class="timer" id="timer">60<span class="unit">s</span></div>
+      </header>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-label">Chars / min</div>
+          <div class="stat-value" id="cpm"></div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Accuracy</div>
+          <div class="stat-value" id="accuracy"></div>
+        </div>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+
+      <!-- Text to type -->
+      <div class="text-box">
+        <div class="text-display" id="text-display"></div>
+      </div>
+
+      <!-- Input -->
+      <textarea
+        class="typing-input"
+        id="typing-input"
+        placeholder="Press Start and begin typing…"
+        disabled
+      ></textarea>
+
+      <!-- Controls -->
+      <div class="controls">
+        <div class="difficulty">
+          <button class="diff-btn active" data-level="easy">Easy</button>
+          <button class="diff-btn" data-level="medium">Medium</button>
+          <button class="diff-btn" data-level="hard">Hard</button>
+        </div>
+        <div class="spacer"></div>
+        <button class="btn-reset" id="btn-reset">Reset</button>
+        <button class="btn-start" id="btn-start">Start</button>
+      </div>
+
+      <!-- Result -->
+      <div class="result" id="result">
+        <div class="result-title">Result</div>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="result-num" id="result-cpm">—</div>
+            <div class="result-lbl">chars/min</div>
+          </div>
+          <div class="result-item">
+            <div class="result-num" id="result-acc">—</div>
+            <div class="result-lbl">accuracy</div>
+          </div>
+          <div class="result-item">
+            <div class="result-num" id="result-chars">—</div>
+            <div class="result-lbl">typed</div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">type more — get faster</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
