@@ -2,6 +2,8 @@
 
 A minimal typing speed test app built with vanilla HTML, CSS and JavaScript.
 
+🔗 **Live Demo:** [typing-speed-test.vercel.app](https://typing-speed-test-seven-lyart.vercel.app/)
+
 ## Features
 
 - 60 second countdown timer
